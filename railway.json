@@ -1,0 +1,19 @@
+{
+  "build": {
+    "builder": "nixpacks",
+    "buildCommand": "cd apps/api && npm run build"
+  },
+  "deploy": {
+    "startCommand": "cd apps/api && npm start",
+    "restartPolicyMaxRetries": 3,
+    "restartPolicyWindowMs": 60000
+  },
+  "plugins": [
+    {
+      "source": "https://github.com/railwayapp/railway-templates/tree/main/plugins/postgres"
+    },
+    {
+      "source": "https://github.com/railwayapp/railway-templates/tree/main/plugins/redis"
+    }
+  ]
+}

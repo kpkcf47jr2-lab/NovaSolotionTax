@@ -1,0 +1,25 @@
+{
+  "name": "NovaSolutionTax",
+  "displayName": "NovaSolutionTax",
+  "version": "1.0.0",
+  "description": "Advanced Tax Preparation & Management Platform",
+  "slug": "nova-solution-tax",
+  "icon": "./icon.png",
+  "scheme": "novasolutiontax",
+  "platforms": [
+    "ios",
+    "android",
+    "web"
+  ],
+  "assetBundlePatterns": [
+    "**/*"
+  ],
+  "extra": {
+    "eas": {
+      "projectId": "nova-solution-tax-prod"
+    },
+    "domain": "novasolition.tax",
+    "apiUrl": "https://api.novasolition.tax",
+    "appUrl": "https://app.novasolition.tax"
+  }
+}
